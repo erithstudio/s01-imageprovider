@@ -22,7 +22,7 @@ public class FileResource {
             @FormDataParam("file") InputStream uploadedInputStream,
             @FormDataParam("file") FormDataContentDisposition fileDetail) throws IOException {
         // TODO: uploadFileLocation should come from config.yml
-        String uploadedFileLocation = "uploads/" + fileDetail.getFileName();
+        String uploadedFileLocation = "D:/workspace/s01-imageprovider/uploads/" + fileDetail.getFileName();
 //        LOGGER.info(uploadedFileLocation);
         // save it
         writeToFile(uploadedInputStream, uploadedFileLocation);
